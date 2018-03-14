@@ -17,3 +17,4 @@ var obj = {
 
 
 console.log(hasProp('height', obj));
+console.log(hasProp('asd', obj));
