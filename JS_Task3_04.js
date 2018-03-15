@@ -8,7 +8,6 @@ function checkProp(str, object) {
 }
 
 
-
 var obj = {
     name : 'Ivan',
     age : '25',
