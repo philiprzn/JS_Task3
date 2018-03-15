@@ -28,5 +28,7 @@ var copyObj = clone(obj);
 
 console.log(copyObj);
 console.log(obj.b === copyObj.b);
+console.log(obj.e === copyObj.e);
+console.log(obj.e.f === copyObj.e.f);
 
 
