@@ -3,13 +3,14 @@ var obj = {
     age : '25',
     height : 177,
     gendere : 'male'
-},
-    newObj;
-
+}
 
 function copyObj(obj) {
-    newObj = obj;
-    return newObj
+    newObj = {};
+    for (var prop in obj){
+        newObj[prop] = obj[prop];
+    }
+    return newObj;
 }
 
 
