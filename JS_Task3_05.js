@@ -3,9 +3,8 @@ var obj = {
     age : '25',
     height : 177,
     gendere : 'male'
-};
-
-var newObj;
+},
+    newObj;
 
 
 function copyObj(obj) {
