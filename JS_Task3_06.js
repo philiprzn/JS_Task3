@@ -11,20 +11,20 @@ var obj = {
 };
 
 
-function clone(obj) {
+function cloneObj(obj) {
 
     if (null == obj || "object" != typeof obj) return obj;
 
-    if (obj instanceof Object) {
+    if (obj instanceof Object){
         var copy = {};
-        for (var attr in obj) {
-            if (obj.hasOwnProperty(attr)) copy[attr] = clone(obj[attr]);
+        for (var prop in obj){
+            if (obj.hasOwnProperty(prop)) copy[prop] = cloneObj(obj[prop]);
         }
         return copy;
     }
 }
 
-var copyObj = clone(obj);
+var copyObj = cloneObj(obj);
 
 console.log(copyObj);
 console.log(obj.b === copyObj.b);
